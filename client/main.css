@@ -1,0 +1,31 @@
+/* CSS declarations go here */
+Header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+Header a, #login-buttons a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 36px;
+  font-size: 1.2em;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-right: 90px;
+}
+Header{
+  color: #fff;
+  background: #524763;
+  padding: 20px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 7;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+body{
+  margin-top: 90px;
+}
