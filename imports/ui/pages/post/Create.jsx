@@ -36,15 +36,15 @@ export default class Create extends React.Component {
         </div>
         <main>
           <div>
-            <input name="name" value={name} onChange={this.onChange} type="text"/>
+            <input name="name" value={name} onChange={this.onChange} type="text" placeholder="Введите свое имя"/>
           </div>
           <div>
-            <textarea name="description" value={description} onChange={this.onChange} id="" cols="30" rows="10"></textarea>
+            <textarea name="description" value={description} onChange={this.onChange} id="" cols="30" rows="10" placeholder="Введите описание товара"></textarea>
           </div>
           <div>
             <input name="cost" value={cost} onChange={this.onChange} type="number"/>
           </div>
-          <div><button onClick={this.addPost.bind(this)}>Submit</button></div>
+          <div><button onClick={this.addPost.bind(this)}>Отправыть на доску</button></div>
         </main>    
       </section>
     );
