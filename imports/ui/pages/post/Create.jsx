@@ -20,9 +20,10 @@ export default class Create extends React.Component {
 
   addPost (event) {
     event.preventDefault();
+    const email = Meteor.user().emails[0].address;
     const { name, description, cost } = this.state;
     if (name && description && (cost>0)) {
-      Posts.insert({ name, description, cost })
+      Posts.insert({ name, description, cost, email })
       this.props.history.push("/")
     }
   }

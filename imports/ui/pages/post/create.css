@@ -20,11 +20,16 @@
     margin: auto;
     width: 91%;
     padding: 10px;
-    
 }
 
-#createpost input,textarea{
+#createpost div textarea{
     width: 100%;
+    resize: none;
+}
+
+#createpost div input {
+    width: 50%;
+    border-radius: 5px;
 }
 
 #createpost div button {
